@@ -19,5 +19,5 @@ Je redémarre le système : `sudo reboot`
 Je mets à jour le système : `sudo apt update` puis `sudo apt upgrade`  
 Je redémarre une seconde fois le système : `sudo reboot`  
 Je purge les paquets qui ne sont plus nécessaires : `sudo apt autoremove`  
-Je désactive de manière permanente l'écran de veille : `echo 'xset s off && xset s noblank && xset -dpms && xset dpms 0 0 0' > ~/.xsessionrc`  
+Je désactive de manière permanente l'écran de veille : `xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/blank-on-ac -s 0 && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-enabled -s false && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-suspend-hibernate -s false && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/logind-handle-lid-switch -s false`  
 Je prends un instantané (aussi appelé *snapshoot* en anglais) de la machine virtuelle et tout est prêt !
