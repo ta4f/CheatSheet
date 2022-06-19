@@ -17,5 +17,5 @@ Enfin, je configure l'horloge système : `sudo timedatectl set-timezone Europe/P
 Je redémarre le système : `sudo reboot`  
 Je mets à jour le système : `sudo apt update` puis `sudo apt upgrade`  
 Je redémarre une seconde fois le système : `sudo reboot`  
-Je purge les paquets qui ne sont plus nécessaires : `sudo apt autoremove`
+Je purge les paquets qui ne sont plus nécessaires : `sudo apt autoremove`  
 Je prends un instantané (aussi appelé *snapshoot* en anglais) de la VM et tout est prêt !
