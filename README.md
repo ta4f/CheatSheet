@@ -17,6 +17,6 @@ Puis je configure, cette fois-ci de manière permanente, le clavier : `sudo dpkg
 Enfin, je configure l'horloge système : `sudo timedatectl set-timezone Europe/Paris`  
 Je mets à jour le système : `sudo apt update` puis `sudo apt upgrade`  
 Je purge les paquets qui ne sont plus nécessaires : `sudo apt autoremove`  
-Je désactive de manière permanente l'écran de veille : `xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/blank-on-ac -s 0 && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-enabled -s false && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-suspend-hibernate -s false && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/logind-handle-lid-switch -s false`  
+Je désactive de manière permanente l'écran de veille : `xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/blank-on-ac -n -t int -s 0 && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-enabled -n -t bool -s false && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-suspend-hibernate -n -t bool -s false && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/logind-handle-lid-switch -n -t bool -s false`  
 Je redémarre le système : `sudo reboot`  
 Je prends un instantané (aussi appelé *snapshoot* en anglais) de la machine virtuelle et tout est prêt !
