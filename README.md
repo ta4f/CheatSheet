@@ -1,11 +1,12 @@
 # CheatSheet
 
-Voici l'ensemble de mon aide-mémoire, appelé en anglais *cheatsheet*, classé par thème en ordre alphabétique après la configuration de Kali :
+Voici l'ensemble de mon aide-mémoire, appelé en anglais *cheatsheet*, classé par thème en ordre alphabétique après la partie concernant l'installation et la configuration de Kali :
 
-1. [Configuration de Kali](#installation_kali)
+1. [Installation et configuration de Kali](#installation_kali)
 
+## Installation et configuration de Kali <a name="installation_kali"></a>
 
-## Configuration de Kali <a name="installation_kali"></a>
+Je télécharge la machine virtuelle correspondant à VirtualBox : https://www.kali.org/get-kali/#kali-virtual-machines
 
 Les identifiants de connexion par défaut sont : kali / kali  
 Au premier lancement, le clavier étant en QWERTY, il faut taper : kqli
@@ -18,4 +19,4 @@ Je redémarre le système : `sudo reboot`
 Je mets à jour le système : `sudo apt update` puis `sudo apt upgrade`  
 Je redémarre une seconde fois le système : `sudo reboot`  
 Je purge les paquets qui ne sont plus nécessaires : `sudo apt autoremove`  
-Je prends un instantané (aussi appelé *snapshoot* en anglais) de la VM et tout est prêt !
+Je prends un instantané (aussi appelé *snapshoot* en anglais) de la machine virtuelle et tout est prêt !
