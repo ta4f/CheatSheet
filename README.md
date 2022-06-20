@@ -4,6 +4,7 @@ Voici l'ensemble de mon aide-mémoire, appelé en anglais *cheatsheet*, classé 
 
 1. [Installation et configuration de Kali](#installation_kali)
 2. [Cryptographie](#cryptographie)
+3. [Stéganographie](#steganographie)
 
 ## Installation et configuration de Kali <a name="installation_kali"></a>
 
@@ -23,3 +24,5 @@ Je redémarre le système : `sudo reboot`
 Je prends un instantané (aussi appelé *snapshoot* en anglais) de la machine virtuelle et tout est prêt !
 
 ## Cryptographie <a name="cryptographie"></a>
+
+## Stéganographie <a name="steganographie"></a>
