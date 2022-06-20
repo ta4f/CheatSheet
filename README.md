@@ -3,6 +3,7 @@
 Voici l'ensemble de mon aide-mémoire, appelé en anglais *cheatsheet*, classé par thème en ordre alphabétique après la partie concernant l'installation et la configuration de Kali :
 
 1. [Installation et configuration de Kali](#installation_kali)
+2. [Cryptographie](#cryptographie)
 
 ## Installation et configuration de Kali <a name="installation_kali"></a>
 
@@ -20,3 +21,5 @@ Je purge les paquets qui ne sont plus nécessaires : `sudo apt autoremove`
 Je désactive de manière permanente l'écran de veille : `xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/blank-on-ac -n -t int -s 0 && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/dpms-enabled -n -t bool -s false && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lock-screen-suspend-hibernate -n -t bool -s false && xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/logind-handle-lid-switch -n -t bool -s false`  
 Je redémarre le système : `sudo reboot`  
 Je prends un instantané (aussi appelé *snapshoot* en anglais) de la machine virtuelle et tout est prêt !
+
+## Cryptographie <a name="cryptographie"></a>
